@@ -7,14 +7,14 @@ Here is a demo of our piano transcription system: https://www.youtube.com/watch?
 
 ## Installation
 
-My version:
-python 3.11
-torch  2.7.0
-librosa 0.10.2
-numpy 2.0.2
-audioread  3.0.1
-mido 1.3.3
-matplotlib 3.10.0 
+My versions:
+python 3.11, 
+torch  2.7.0, 
+librosa 0.10.2, 
+numpy 2.0.2, 
+audioread  3.0.1, 
+mido 1.3.3, 
+matplotlib 3.10.0,  
 torchlibrosa  0.1.0 
 
 The piano transcription system is developed with Python 3.7 and PyTorch 1.4.0 (Should work with other versions, but not fully tested).

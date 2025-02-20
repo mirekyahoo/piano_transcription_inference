@@ -15,7 +15,8 @@ numpy 2.0.2,
 audioread  3.0.1, 
 mido 1.3.3, 
 matplotlib 3.10.0,  
-torchlibrosa  0.1.0 
+torchlibrosa  0.1.0,
+ipywidgets 8.1.5
 
 The piano transcription system is developed with Python 3.7 and PyTorch 1.4.0 (Should work with other versions, but not fully tested).
 Install PyTorch following https://pytorch.org/. Users should have **ffmpeg** installed to transcribe mp3 files.

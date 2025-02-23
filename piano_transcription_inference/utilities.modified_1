@@ -215,7 +215,7 @@ class RegressionPostProcessor(object):
 	# mirek's update below:
         # Optionally modify the note velocities by dividing each velocity by its note number.
         # Uncomment the following line to perform the modification.
-        # est_on_off_note_vels = self.modify_est_on_off_note_vels_by_note(est_on_off_note_vels)
+        est_on_off_note_vels = self.modify_est_on_off_note_vels_by_note(est_on_off_note_vels)
 
         # Reformat notes to MIDI events
         est_note_events = self.detected_notes_to_events(est_on_off_note_vels)

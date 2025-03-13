@@ -38,10 +38,10 @@ pip install notebook
 python -m ipykernel install --user --name PIANO --display-name "Python 3.11.11 (PIANO)"
 ```
 
-4. DOWNLOAD PIANO_TRANSCRITION_INFER LIBRARY AND UNCOMPRESS IT TO YOUR "PIANO" DIRECTORY
+4. DOWNLOAD THE PIANO_TRANSCRIPTION_INFERENCE LIBRARY AND UNCOMPRESS IT TO YOUR "PIANO" DIRECTORY
 Go to:
 https://github.com/mirekyahoo/piano_transcription_inference
-Press the green "CODE" button and download zip file
+Press the green "CODE" button and download the zip file
 
 
 3. DOWNLOAD PIANO SAMPLES

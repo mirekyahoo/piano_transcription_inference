@@ -7,16 +7,54 @@ Here is a demo of our piano transcription system: https://www.youtube.com/watch?
 
 ## Installation
 
-My versions:
-python 3.11, 
-torch  2.7.0, 
-librosa 0.10.2, 
-numpy 2.0.2, 
-audioread  3.0.1, 
-mido 1.3.3, 
-matplotlib 3.10.0,  
-torchlibrosa  0.1.0,
-ipywidgets 8.1.5
+
+0. CREATE A NEW DIRECTORY "PIANO"  AND CHANGE TO THIS DIRECTORY
+mkdir PIANO
+cd PIANO
+
+1. CREATE A NEW ENVIRONMENT "PIANO" AND ACTIVATE IT
+conda create --name PIANO python=3.11.11
+conda activate PIANO
+
+2. DOWNLOAD PACKAGES
+pip install librosa==0.10.2
+pip install numpy==2.0.2
+pip install audioread==3.0.1
+pip install mido==1.3.3
+pip install matplotlib==3.10.0
+pip install torchlibrosa==0.1.0
+pip install ipywidgets==8.1.5
+pip install librosa==0.10.2
+pip install torch==2.6.0
+pip install pretty_midi
+pip install fluidsynth
+pip install ipykernel
+pip install jupyter
+pip install notebook
+python -m ipykernel install --user --name PIANO --display-name "Python 3.11.11 (PIANO)"
+
+
+3. DOWNLOAD PIANO_TRANSCRITION_INFER LIBRARY AND UNCOMPRESS IT TO YOUR "PIANO" DIRECTORY
+Go to:
+https://github.com/mirekyahoo/piano_transcription_inference
+Press the green "CODE" button and download zip file
+
+
+3. DOWNLOAD PIANO SAMPLES
+Download Yamaha S6 soundfonts from:
+https://drive.google.com/file/d/1IyAYg882PNWYwDHzgorQWWLx1PaogZhW/view
+
+... and move this file to your PIANO/PIANO_TRANSCRITION_INFERENCE/SOUNDFONTS directory
+
+Install fluidsynth on Windows OS:
+https://github.com/FluidSynth/fluidsynth/releases/tag/v2.4.3
+
+4. START JUPYTER NOTEBOOK from PIANO/PIANO_TRANSCRITION_INFERENCE directory
+
+```bash
+jupyter notebook
+```
+
 
 The piano transcription system is developed with Python 3.7 and PyTorch 1.4.0 (Should work with other versions, but not fully tested).
 Install PyTorch following https://pytorch.org/. Users should have **ffmpeg** installed to transcribe mp3 files.

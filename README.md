@@ -8,7 +8,7 @@ Here is a demo of our piano transcription system: https://www.youtube.com/watch?
 ## Installation
 
 
-0. CREATE A NEW DIRECTORY "PIANO"  AND CHANGE TO THIS DIRECTORY
+1. CREATE A NEW DIRECTORY "PIANO"  AND CHANGE TO THIS DIRECTORY
 ```bash
 mkdir PIANO
 cd PIANO

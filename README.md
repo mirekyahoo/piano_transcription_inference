@@ -9,14 +9,18 @@ Here is a demo of our piano transcription system: https://www.youtube.com/watch?
 
 
 0. CREATE A NEW DIRECTORY "PIANO"  AND CHANGE TO THIS DIRECTORY
+```bash
 mkdir PIANO
 cd PIANO
+```
 
-1. CREATE A NEW ENVIRONMENT "PIANO" AND ACTIVATE IT
+2. CREATE A NEW ENVIRONMENT "PIANO" AND ACTIVATE IT
+```bash
 conda create --name PIANO python=3.11.11
 conda activate PIANO
-
-2. DOWNLOAD PACKAGES
+```
+3. DOWNLOAD PACKAGES
+```bash
 pip install librosa==0.10.2
 pip install numpy==2.0.2
 pip install audioread==3.0.1
@@ -32,9 +36,9 @@ pip install ipykernel
 pip install jupyter
 pip install notebook
 python -m ipykernel install --user --name PIANO --display-name "Python 3.11.11 (PIANO)"
+```
 
-
-3. DOWNLOAD PIANO_TRANSCRITION_INFER LIBRARY AND UNCOMPRESS IT TO YOUR "PIANO" DIRECTORY
+4. DOWNLOAD PIANO_TRANSCRITION_INFER LIBRARY AND UNCOMPRESS IT TO YOUR "PIANO" DIRECTORY
 Go to:
 https://github.com/mirekyahoo/piano_transcription_inference
 Press the green "CODE" button and download zip file
@@ -46,24 +50,15 @@ https://drive.google.com/file/d/1IyAYg882PNWYwDHzgorQWWLx1PaogZhW/view
 
 ... and move this file to your PIANO/PIANO_TRANSCRITION_INFERENCE/SOUNDFONTS directory
 
-Install fluidsynth on Windows OS:
+4 DOWNLOAD FLUIDSYNTH FILES (WINDOWS VERSION) FROM:
 https://github.com/FluidSynth/fluidsynth/releases/tag/v2.4.3
 
-4. START JUPYTER NOTEBOOK from PIANO/PIANO_TRANSCRITION_INFERENCE directory
+5. START JUPYTER NOTEBOOK from PIANO/PIANO_TRANSCRITION_INFERENCE directory
 
 ```bash
 jupyter notebook
 ```
 
-
-The piano transcription system is developed with Python 3.7 and PyTorch 1.4.0 (Should work with other versions, but not fully tested).
-Install PyTorch following https://pytorch.org/. Users should have **ffmpeg** installed to transcribe mp3 files.
-
-```bash
-pip install piano_transcription_inference
-```
-
-Installation is finished! 
 
 ## Usage
 Want to try it out but don't want to install anything? We have set up a [Google Colab](https://colab.research.google.com/github/qiuqiangkong/piano_transcription_inference/blob/master/resources/inference.ipynb).

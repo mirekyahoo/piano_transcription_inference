@@ -35,7 +35,7 @@ pip install fluidsynth
 pip install ipykernel
 pip install jupyter
 pip install notebook
-python -m ipykernel install --user --name PIANO --display-name "Python 3.11.11 (PIANO)"
+python -m ipykernel install --user --name PIANO --display-name "Python 3.11 (PIANO)"
 ```
 
 4. DOWNLOAD THE PIANO_TRANSCRIPTION_INFERENCE LIBRARY AND UNCOMPRESS IT TO YOUR "PIANO" DIRECTORY

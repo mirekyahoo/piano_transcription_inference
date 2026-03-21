@@ -43,18 +43,18 @@ Go to:
 https://github.com/mirekyahoo/piano_transcription_inference
 Press the green "CODE" button and download the zip file. Then unzip this file to the PIANO directory. The uncompressed folder will be PIANO/piano_transcription_inference-master
 
-5. Create a new folder "SOUNDFONTS" inside the PIANO/piano_transcription_inference-master directory.
+5. Create a new folder "SOUNDFONTS" inside your "PIANO/piano_transcription_inference-master" directory.
 
 6. DOWNLOAD PIANO SAMPLES
 Download Yamaha S6 soundfonts from:
 https://drive.google.com/file/d/1IyAYg882PNWYwDHzgorQWWLx1PaogZhW/view
 
-... and move this file to your PIANO/piano_transcription_inference-master/SOUNDFONTS directory
+... and move this file to your "PIANO/piano_transcription_inference-master/SOUNDFONTS" directory
 
-7 DOWNLOAD FLUIDSYNTH FILES (WINDOWS VERSION) FROM:
+7 Download FluidSynth files (WINDOWS version) from:
 https://github.com/FluidSynth/fluidsynth/releases/tag/v2.4.3
 
-8. START JUPYTER NOTEBOOK from PIANO/PIANO_TRANSCRITION_INFERENCE directory
+8. Run "jupyter notebook" from your "PIANO/piano_transcription_inference-master" directory
 
 ```bash
 jupyter notebook

@@ -16,7 +16,7 @@ cd PIANO
 
 2. CREATE A NEW ENVIRONMENT "PIANO" AND ACTIVATE IT
 ```bash
-conda create --name PIANO python=3.11.11
+conda create --name PIANO python=3.11
 conda activate PIANO
 ```
 3. DOWNLOAD PACKAGES

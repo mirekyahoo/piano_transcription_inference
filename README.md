@@ -41,19 +41,20 @@ python -m ipykernel install --user --name PIANO --display-name "Python 3.11 (PIA
 4. DOWNLOAD THE PIANO_TRANSCRIPTION_INFERENCE LIBRARY AND UNCOMPRESS IT TO YOUR "PIANO" DIRECTORY
 Go to:
 https://github.com/mirekyahoo/piano_transcription_inference
-Press the green "CODE" button and download the zip file
+Press the green "CODE" button and download the zip file. Then unzip this file to the PIANO directory. The uncompressed folder will be PIANO/piano_transcription_inference-master
 
+5. Create a new folder "SOUNDFONTS" inside the PIANO/piano_transcription_inference-master directory.
 
-3. DOWNLOAD PIANO SAMPLES
+6. DOWNLOAD PIANO SAMPLES
 Download Yamaha S6 soundfonts from:
 https://drive.google.com/file/d/1IyAYg882PNWYwDHzgorQWWLx1PaogZhW/view
 
-... and move this file to your PIANO/PIANO_TRANSCRITION_INFERENCE/SOUNDFONTS directory
+... and move this file to your PIANO/piano_transcription_inference-master/SOUNDFONTS directory
 
-4 DOWNLOAD FLUIDSYNTH FILES (WINDOWS VERSION) FROM:
+7 DOWNLOAD FLUIDSYNTH FILES (WINDOWS VERSION) FROM:
 https://github.com/FluidSynth/fluidsynth/releases/tag/v2.4.3
 
-5. START JUPYTER NOTEBOOK from PIANO/PIANO_TRANSCRITION_INFERENCE directory
+8. START JUPYTER NOTEBOOK from PIANO/PIANO_TRANSCRITION_INFERENCE directory
 
 ```bash
 jupyter notebook

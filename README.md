@@ -35,7 +35,7 @@ pip install fluidsynth
 pip install ipykernel
 pip install jupyter
 pip install notebook
-python -m pip install torch torchvision
+python -m pip install --no-cache-dir --timeout 1000 torch
 python -m ipykernel install --user --name PIANO --display-name "Python 3.11 (PIANO)"
 ```
 

@@ -55,8 +55,10 @@ https://drive.google.com/file/d/1ymBw_pcupAE_bexL9sNTvKZ9_huxoAUj/view
 
 ... and move this file (KAWAI_MP11SE_SK_Concert_Grand.sf2) to your "PIANO/piano_transcription_inference-master/SOUNDFONTS" directory
 
-7 Download FluidSynth files (WINDOWS version) from:
+7 DOWNLOAD FluidSynth SOFTWARE (WINDOWS version) from:
 https://github.com/FluidSynth/fluidsynth/releases/tag/v2.4.3
+
+8. UNZIP FluidSynth SOFTWARE to your "PIANO/piano_transcription_inference-master/SOUNDFONTS" directory
 
 8. Run "jupyter notebook" from your "PIANO/piano_transcription_inference-master" directory
 

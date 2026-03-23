@@ -50,8 +50,7 @@ Press the green "CODE" button and download the zip file. Then unzip this file to
 
 5. Create a new folder "SOUNDFONTS" inside your "PIANO/piano_transcription_inference-master" directory.
 
-6. DOWNLOAD PIANO SAMPLES
-Download KAWAI PIANO soundfonts from:
+6. DOWNLOAD PIANO SAMPLES:
 https://drive.google.com/file/d/1ymBw_pcupAE_bexL9sNTvKZ9_huxoAUj/view
 
 ... and move this file to your "PIANO/piano_transcription_inference-master/SOUNDFONTS" directory

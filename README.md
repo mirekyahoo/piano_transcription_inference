@@ -53,7 +53,7 @@ Press the green "CODE" button and download the zip file. Then unzip this file to
 6. DOWNLOAD PIANO SAMPLES:
 https://drive.google.com/file/d/1ymBw_pcupAE_bexL9sNTvKZ9_huxoAUj/view
 
-... and move this file to your "PIANO/piano_transcription_inference-master/SOUNDFONTS" directory
+... and move this file (KAWAI_MP11SE_SK_Concert_Grand.sf2) to your "PIANO/piano_transcription_inference-master/SOUNDFONTS" directory
 
 7 Download FluidSynth files (WINDOWS version) from:
 https://github.com/FluidSynth/fluidsynth/releases/tag/v2.4.3

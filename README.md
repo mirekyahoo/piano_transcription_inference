@@ -87,7 +87,11 @@ SOUNDFONTS\bin\fluidsynth.exe -ni SOUNDFONTS\KAWAI_MP11SE_SK_Concert_Grand.sf2 m
 
 15. Run "jupyter notebook" from your "PIANO/piano_transcription_inference-master" directory
     
-16. Open REFERENCE_NOTES_WINDOWS.ipynb and run the cells one by one
+16. Open REFERENCE_NOTES_WINDOWS.ipynb
+    
+17. Select Kernel: Python 3.11 (PIANO)
+
+18. Run cells one by one
     
 
 ## Usage

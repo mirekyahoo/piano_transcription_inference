@@ -7,19 +7,20 @@ Here is a demo of our piano transcription system: https://www.youtube.com/watch?
 
 ## Installation
 
+1. OPEN COMMAND LINE WINDOW
 
-1. CREATE A NEW DIRECTORY "PIANO"  AND CHANGE TO THIS DIRECTORY
+2. CREATE A NEW DIRECTORY "PIANO"  AND CHANGE TO THIS DIRECTORY
 ```bash
 mkdir PIANO
 cd PIANO
 ```
 
-2. CREATE A NEW ENVIRONMENT "PIANO" AND ACTIVATE IT
+3. CREATE A NEW ENVIRONMENT "PIANO" AND ACTIVATE IT
 ```bash
 conda create --name PIANO python=3.11
 conda activate PIANO
 ```
-3. DOWNLOAD AND INSTALL REQUIRED PACKAGES
+4. DOWNLOAD AND INSTALL REQUIRED PACKAGES
 ```bash
 pip install librosa==0.10.2
 pip install numpy==2.0.2
@@ -37,35 +38,57 @@ pip install jupyter
 pip install notebook
 python -m pip install --no-cache-dir --timeout 1000 torch
 python -m ipykernel install --user --name PIANO --display-name "Python 3.11 (PIANO)"
+```
 
-OPTIONALLY INSTALL:
+5. OPTIONALLY INSTALL:
+```bash
 pip install pygame  
 pip install "moviepy==1.0.3" "decorator<5"
 ```
 
-4. DOWNLOAD THE PIANO_TRANSCRIPTION_INFERENCE LIBRARY AND UNCOMPRESS IT TO YOUR "PIANO" DIRECTORY
+6. DOWNLOAD THE PIANO_TRANSCRIPTION_INFERENCE LIBRARY AND UNCOMPRESS IT TO YOUR "PIANO" DIRECTORY
 Go to:
+```bash
 https://github.com/mirekyahoo/piano_transcription_inference
+```
 Press the green "CODE" button and download the zip file. Then unzip this file to the PIANO directory. The uncompressed folder will be PIANO/piano_transcription_inference-master
 
-5. Create a new folder "SOUNDFONTS" inside your "PIANO/piano_transcription_inference-master" directory.
+7. Create a new folder "SOUNDFONTS" inside your "PIANO/piano_transcription_inference-master" directory.
 
-6. DOWNLOAD PIANO SAMPLES:
-https://drive.google.com/file/d/1ymBw_pcupAE_bexL9sNTvKZ9_huxoAUj/view
-
-... and move this file (KAWAI_MP11SE_SK_Concert_Grand.sf2) to your "PIANO/piano_transcription_inference-master/SOUNDFONTS" directory
-
-7 DOWNLOAD FluidSynth SOFTWARE (WINDOWS Version fluidsynth-2.4.3-win10-x64.zip) from:
-https://github.com/FluidSynth/fluidsynth/releases/tag/v2.4.3
-
-8. UNZIP FluidSynth SOFTWARE to your "PIANO/piano_transcription_inference-master/SOUNDFONTS" directory
-
-8. Run "jupyter notebook" from your "PIANO/piano_transcription_inference-master" directory
-
+8. DOWNLOAD PIANO SAMPLES:
 ```bash
-jupyter notebook
+https://drive.google.com/file/d/1ymBw_pcupAE_bexL9sNTvKZ9_huxoAUj/view
+```
+... and move the file you downloaded (KAWAI_MP11SE_SK_Concert_Grand.sf2) to your "PIANO/piano_transcription_inference-master/SOUNDFONTS" directory
+
+9. DOWNLOAD FluidSynth SOFTWARE (WINDOWS Version fluidsynth-2.4.3-win10-x64.zip) from:
+```bash
+https://github.com/FluidSynth/fluidsynth/releases/tag/v2.4.3
+```
+10. UNZIP FluidSynth SOFTWARE to your "PIANO/piano_transcription_inference-master/SOUNDFONTS" directory
+
+11. OPEN COMMAND LINE WINDOW AND CHNAGE TO "PIANO/piano_transcription_inference-master" directory.
+```bash
+cd PIANO
+cd piano_transcription_inference-master
+```
+13. CONVERT AN AUDIO FILE TO A MIDI FILE 
+```bash
+python example.py --audio_path resources/cut_liszt.mp3 --output_midi_path my_midi.mid
 ```
 
+14. PLAY OUT MIDI FILES
+
+```bash
+SOUNDFONTS\bin\fluidsynth.exe -ni SOUNDFONTS\KAWAI_MP11SE_SK_Concert_Grand.sf2 resources\cut_liszt.mid
+
+SOUNDFONTS\bin\fluidsynth.exe -ni SOUNDFONTS\KAWAI_MP11SE_SK_Concert_Grand.sf2 my_midi.mid
+```
+
+15. Run "jupyter notebook" from your "PIANO/piano_transcription_inference-master" directory
+    
+16. Open REFERENCE_NOTES_WINDOWS.ipynb and run the cells one by one
+    
 
 ## Usage
 Want to try it out but don't want to install anything? We have set up a [Google Colab](https://colab.research.google.com/github/qiuqiangkong/piano_transcription_inference/blob/master/resources/inference.ipynb).

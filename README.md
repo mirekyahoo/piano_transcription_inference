@@ -19,7 +19,7 @@ cd PIANO
 conda create --name PIANO python=3.11
 conda activate PIANO
 ```
-3. DOWNLOAD PACKAGES
+3. DOWNLOAD AND INSTALL REQUIRED PACKAGES
 ```bash
 pip install librosa==0.10.2
 pip install numpy==2.0.2
@@ -37,6 +37,10 @@ pip install jupyter
 pip install notebook
 python -m pip install --no-cache-dir --timeout 1000 torch
 python -m ipykernel install --user --name PIANO --display-name "Python 3.11 (PIANO)"
+
+OPTIONALLY INSTALL:
+pip install pygame  
+pip install "moviepy==1.0.3" "decorator<5"
 ```
 
 4. DOWNLOAD THE PIANO_TRANSCRIPTION_INFERENCE LIBRARY AND UNCOMPRESS IT TO YOUR "PIANO" DIRECTORY

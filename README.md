@@ -81,7 +81,9 @@ python example.py --audio_path resources/cut_liszt.mp3 --output_midi_path my_mid
 
 ```bash
 SOUNDFONTS\bin\fluidsynth.exe -ni SOUNDFONTS\KAWAI_MP11SE_SK_Concert_Grand.sf2 resources\cut_liszt.mid
+```
 
+```bash
 SOUNDFONTS\bin\fluidsynth.exe -ni SOUNDFONTS\KAWAI_MP11SE_SK_Concert_Grand.sf2 my_midi.mid
 ```
 

@@ -70,6 +70,7 @@ https://github.com/FluidSynth/fluidsynth/releases/tag/v2.4.3
 ```bash
 cd PIANO
 cd piano_transcription_inference-master
+conda activate PIANO
 ```
 11. CONVERT AN AUDIO FILE TO A MIDI FILE 
 ```bash

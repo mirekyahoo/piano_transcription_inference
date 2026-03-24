@@ -53,31 +53,30 @@ https://github.com/mirekyahoo/piano_transcription_inference
 ```
 Press the green "CODE" button and download the zip file. Then unzip this file to the PIANO directory. The uncompressed folder will be PIANO/piano_transcription_inference-master
 
-7. Create a new folder "SOUNDFONTS" inside your "PIANO/piano_transcription_inference-master" directory.
 
-8. DOWNLOAD PIANO SAMPLES:
+7. DOWNLOAD PIANO SAMPLES:
 ```bash
 https://drive.google.com/file/d/1ymBw_pcupAE_bexL9sNTvKZ9_huxoAUj/view
 ```
 ... and move the file you downloaded (KAWAI_MP11SE_SK_Concert_Grand.sf2) to your "PIANO/piano_transcription_inference-master/SOUNDFONTS" directory
 
-9. DOWNLOAD FluidSynth SOFTWARE (WINDOWS Version fluidsynth-2.4.3-win10-x64.zip) from:
+8. DOWNLOAD FluidSynth SOFTWARE (WINDOWS Version fluidsynth-2.4.3-win10-x64.zip) from:
 ```bash
 https://github.com/FluidSynth/fluidsynth/releases/tag/v2.4.3
 ```
-10. UNZIP FluidSynth SOFTWARE to your "PIANO/piano_transcription_inference-master/SOUNDFONTS" directory
+9. UNZIP FluidSynth SOFTWARE to your "PIANO/piano_transcription_inference-master/SOUNDFONTS" directory
 
-11. OPEN COMMAND LINE WINDOW AND CHNAGE TO "PIANO/piano_transcription_inference-master" directory.
+10. OPEN COMMAND LINE WINDOW AND CHNAGE TO "PIANO/piano_transcription_inference-master" directory.
 ```bash
 cd PIANO
 cd piano_transcription_inference-master
 ```
-13. CONVERT AN AUDIO FILE TO A MIDI FILE 
+11. CONVERT AN AUDIO FILE TO A MIDI FILE 
 ```bash
 python example.py --audio_path resources/cut_liszt.mp3 --output_midi_path my_midi.mid
 ```
 
-14. PLAY OUT MIDI FILES
+12. PLAY OUT MIDI FILES
 
 ```bash
 SOUNDFONTS\bin\fluidsynth.exe -ni SOUNDFONTS\KAWAI_MP11SE_SK_Concert_Grand.sf2 resources\cut_liszt.mid
@@ -85,13 +84,13 @@ SOUNDFONTS\bin\fluidsynth.exe -ni SOUNDFONTS\KAWAI_MP11SE_SK_Concert_Grand.sf2 r
 SOUNDFONTS\bin\fluidsynth.exe -ni SOUNDFONTS\KAWAI_MP11SE_SK_Concert_Grand.sf2 my_midi.mid
 ```
 
-15. Run "jupyter notebook" from your "PIANO/piano_transcription_inference-master" directory
+13. Run "jupyter notebook" from your "PIANO/piano_transcription_inference-master" directory
     
-16. Open any notebook file (e.g. CONVERT_WINDOWS.ipynb, MIDI_ANALYZER_WINDOWS, SPECTROGRAM_WINDOWS.ipynb, REFERENCE_NOTES_WINDOWS.ipynb)
+14. Open any notebook file (e.g. CONVERT_WINDOWS.ipynb, MIDI_ANALYZER_WINDOWS, SPECTROGRAM_WINDOWS.ipynb, REFERENCE_NOTES_WINDOWS.ipynb)
     
-17. Select Kernel: Python 3.11 (PIANO)
+15. Select Kernel: Python 3.11 (PIANO)
 
-18. Run cells one by one
+16. Run cells one by one
     
 
 ## Usage

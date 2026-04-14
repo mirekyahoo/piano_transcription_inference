@@ -56,9 +56,9 @@ Press the green "CODE" button and download the zip file. Then unzip this file to
 
 7. DOWNLOAD PIANO SAMPLES:
 ```bash
-https://drive.google.com/file/d/1ymBw_pcupAE_bexL9sNTvKZ9_huxoAUj/view
+https://drive.google.com/file/d/1-CfCo0LC3N-M0Sc_YLkzgW-cbzCIwCAs/view
 ```
-... and move the file you downloaded (KAWAI_MP11SE_SK_Concert_Grand.sf2) to your "PIANO/piano_transcription_inference-master/SOUNDFONTS" directory
+... and move the file you downloaded (MuseScore.sf2) to your "PIANO/piano_transcription_inference-master/SOUNDFONTS" directory
 
 8. DOWNLOAD FluidSynth SOFTWARE (WINDOWS Version fluidsynth-2.4.3-win10-x64.zip) from:
 ```bash
@@ -80,11 +80,11 @@ python example.py --audio_path resources/cut_liszt.mp3 --output_midi_path my_mid
 12. PLAY OUT MIDI FILES
 
 ```bash
-SOUNDFONTS\bin\fluidsynth.exe -ni SOUNDFONTS\KAWAI_MP11SE_SK_Concert_Grand.sf2 resources\cut_liszt.mid
+SOUNDFONTS\bin\fluidsynth.exe -ni SOUNDFONTS\MuseScore.sf2 resources\cut_liszt.mid
 ```
 
 ```bash
-SOUNDFONTS\bin\fluidsynth.exe -ni SOUNDFONTS\KAWAI_MP11SE_SK_Concert_Grand.sf2 my_midi.mid
+SOUNDFONTS\bin\fluidsynth.exe -ni SOUNDFONTS\MuseScore.sf2 my_midi.mid
 ```
 
 13. Run "jupyter notebook" from your "PIANO/piano_transcription_inference-master" directory

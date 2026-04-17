@@ -77,27 +77,30 @@ conda activate PIANO
 python example.py --audio_path resources/cut_liszt.mp3 --output_midi_path my_midi.mid
 ```
 
-12. PLAY OUT MIDI FILES
-
-```bash
-SOUNDFONTS\bin\fluidsynth.exe -ni SOUNDFONTS\MuseScore.sf2 resources\cut_liszt.mid
-```
+12. PLAY OUT A MIDI FILE USING SOUNDFONTS
 
 ```bash
 SOUNDFONTS\bin\fluidsynth.exe -ni SOUNDFONTS\MuseScore.sf2 my_midi.mid
 ```
 
-13. Run "jupyter notebook" from your "PIANO/piano_transcription_inference-master" directory
+13. CREATE AN AUDIO FILE FROM THE MIDI FILE AND SAVE IT
+
+```bash
+SOUNDFONTS\bin\fluidsynth.exe -ni SOUNDFONTS\MuseScore.sf2 my_midi.mid -F my_audio.wav
+```
+
+
+14. Run "jupyter notebook" from your "PIANO/piano_transcription_inference-master" directory
 
 ```bash
 jupyter notebook
 ```
 
-14. Open any notebook file (e.g. CONVERT_WINDOWS.ipynb, MIDI_ANALYZER_WINDOWS, SPECTROGRAM_WINDOWS.ipynb, REFERENCE_NOTES_WINDOWS.ipynb)
+14. Open the "PIPELINE.ipynb" notebook file in the browser
     
 15. Select Kernel: Python 3.11 (PIANO)
 
-16. Run cells one by one
+16. Run the cells one by one
     
 
 ## Usage
